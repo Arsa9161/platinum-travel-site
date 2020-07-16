@@ -3,9 +3,6 @@
         margin-bottom: 1rem;
     }
     @mixin atMedium {
-        img {
-            width: 100%;
-        }
         &__b-margin-until-medium {
             margin-bottom: 0;
         }
@@ -24,6 +21,9 @@
         }
         &--child-r-padding>div:not(:last-child) {
             padding-right: 65px;
+        }
+        &--child-r-padding--large>div:not(:last-child) {
+            padding-right: 120px;
         }
     }
 }
