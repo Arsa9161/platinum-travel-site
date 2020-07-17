@@ -38,4 +38,37 @@
             }
         }
     }
+    @mixin atLarge {
+        display: flex;
+        &__b-margin-until-large {
+            margin-bottom: 0;
+        }
+        &__1 {
+            flex: 1;
+        }
+        &__1--larger {
+            flex: 1.2;
+        }
+        &__2 {
+            flex: 2;
+        }
+        &__2--smaller {
+            flex: 1.8;
+        }
+        &--child-r-padding>div:not(:last-child) {
+            padding-right: 65px;
+        }
+        &--child-r-padding-large>div:not(:last-child) {
+            padding-right: 120px;
+        }
+        &--child-r-padding-small>div:not(:last-child) {
+            padding-right: 45px;
+        }
+        /*Ижил өндөртэй блокууд*/
+        &--equal-height-at-large {
+            &>div {
+                display: flex;
+            }
+        }
+    }
 }
