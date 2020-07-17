@@ -2,11 +2,14 @@
     &__b-margin-until-medium {
         margin-bottom: 1rem;
     }
+    &--t-padding {
+        padding-top: 80px;
+    }
     @mixin atMedium {
+        display: flex;
         &__b-margin-until-medium {
             margin-bottom: 0;
         }
-        display: flex;
         &__1 {
             flex: 1;
         }
@@ -22,8 +25,17 @@
         &--child-r-padding>div:not(:last-child) {
             padding-right: 65px;
         }
-        &--child-r-padding--large>div:not(:last-child) {
+        &--child-r-padding-large>div:not(:last-child) {
             padding-right: 120px;
+        }
+        &--child-r-padding-small>div:not(:last-child) {
+            padding-right: 45px;
+        }
+        /*Ижил өндөртэй блокууд*/
+        &--equal-height-at-medium {
+            &>div {
+                display: flex;
+            }
         }
     }
 }
