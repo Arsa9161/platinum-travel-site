@@ -14,3 +14,7 @@ img {
 a {
     color: $mainOrange;
 }
+
+div {
+    border: 1px solid black;
+}

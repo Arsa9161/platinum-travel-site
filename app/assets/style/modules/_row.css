@@ -5,6 +5,36 @@
     &--t-padding {
         padding-top: 80px;
     }
+    &--child-r-padding>div:not(:last-child) {
+        @mixin atMedium {
+            padding-right: 65px;
+        }
+    }
+    &--child-r-padding-large>div:not(:last-child) {
+        @mixin atMedium {
+            padding-right: 120px;
+        }
+    }
+    &--child-r-padding-small>div:not(:last-child) {
+        @mixin atMedium {
+            padding-right: 45px;
+        }
+    }
+    /*Ижил өндөртэй блокууд*/
+    &--equal-height-at-medium {
+        @mixin atMedium {
+            &>div {
+                display: flex;
+            }
+        }
+    }
+    &--equal-height-at-large {
+        @mixin atLarge {
+            &>div {
+                display: flex;
+            }
+        }
+    }
     @mixin atMedium {
         display: flex;
         &__b-margin-until-medium {
@@ -13,6 +43,9 @@
         &__1 {
             flex: 1;
         }
+        &--large {
+            display: inline-block;
+        }
         &__1--larger {
             flex: 1.2;
         }
@@ -21,54 +54,11 @@
         }
         &__2--smaller {
             flex: 1.8;
-        }
-        &--child-r-padding>div:not(:last-child) {
-            padding-right: 65px;
-        }
-        &--child-r-padding-large>div:not(:last-child) {
-            padding-right: 120px;
-        }
-        &--child-r-padding-small>div:not(:last-child) {
-            padding-right: 45px;
-        }
-        /*Ижил өндөртэй блокууд*/
-        &--equal-height-at-medium {
-            &>div {
-                display: flex;
-            }
         }
     }
     @mixin atLarge {
-        display: flex;
-        &__b-margin-until-large {
-            margin-bottom: 0;
-        }
-        &__1 {
-            flex: 1;
-        }
-        &__1--larger {
-            flex: 1.2;
-        }
-        &__2 {
-            flex: 2;
-        }
-        &__2--smaller {
-            flex: 1.8;
-        }
-        &--child-r-padding>div:not(:last-child) {
-            padding-right: 65px;
-        }
-        &--child-r-padding-large>div:not(:last-child) {
-            padding-right: 120px;
-        }
-        &--child-r-padding-small>div:not(:last-child) {
-            padding-right: 45px;
-        }
-        /*Ижил өндөртэй блокууд*/
-        &--equal-height-at-large {
-            &>div {
-                display: flex;
-            }
+        &--large {
+            display: flex;
         }
     }
 }
