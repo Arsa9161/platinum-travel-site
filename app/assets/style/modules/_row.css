@@ -6,19 +6,13 @@
         padding-top: 80px;
     }
     &--child-r-padding>div:not(:last-child) {
-        @mixin atMedium {
-            padding-right: 65px;
-        }
+        padding-right: 65px;
     }
     &--child-r-padding-large>div:not(:last-child) {
-        @mixin atMedium {
-            padding-right: 120px;
-        }
+        padding-right: 120px;
     }
     &--child-r-padding-small>div:not(:last-child) {
-        @mixin atMedium {
-            padding-right: 45px;
-        }
+        padding-right: 0px;
     }
     /*Ижил өндөртэй блокууд*/
     &--equal-height-at-medium {
@@ -59,6 +53,9 @@
     @mixin atLarge {
         &--large {
             display: flex;
+        }
+        &--child-r-padding-small>div:not(:last-child) {
+            padding-right: 45px;
         }
     }
 }
