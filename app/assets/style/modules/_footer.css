@@ -1,0 +1,15 @@
+.footer {
+    background-color: $mainBlue;
+    padding: 1px 0;
+    color: #fff;
+    font-weight: 300;
+    text-align: center;
+    &__text {
+        display: block;
+        margin-bottom: 0.5rem;
+        @mixin atSmall {
+            display: inline-block;
+            margin-right: 1rem;
+        }
+    }
+}
