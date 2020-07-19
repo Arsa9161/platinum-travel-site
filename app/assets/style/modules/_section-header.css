@@ -1,0 +1,5 @@
+.section-header {
+  border: 1px solid black;
+
+  background-color: rgba($mainBlue, 0.5);
+}
