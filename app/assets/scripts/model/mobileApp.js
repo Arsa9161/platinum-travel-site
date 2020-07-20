@@ -11,4 +11,12 @@ export default class MobileMenu {
   toggleHeader() {
     this.section_header.classList.toggle("section-header--active");
   }
+  toggleMenuIcon() {
+    this.menu_icon.classList.toggle("section-header__menu-icon--x");
+  }
+  toggleMenu() {
+    this.toggleContent();
+    this.toggleHeader();
+    this.toggleMenuIcon();
+  }
 }

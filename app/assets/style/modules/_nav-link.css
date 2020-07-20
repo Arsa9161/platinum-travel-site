@@ -15,6 +15,7 @@
     }
   }
   li:last-child {
+    margin-right: 0;
     @mixin atMedium {
       margin-right: 20px;
     }
@@ -23,6 +24,8 @@
   li {
     display: inline-block;
     flex: 1;
+
+    margin-right: 10px;
     @mixin atMedium {
       float: left;
       margin-right: 20px;
@@ -31,7 +34,13 @@
   li a {
     text-decoration: none;
     color: #fff;
-    padding: 10px 5px;
+    padding: 5px 10px;
+    background-color: rgba($mainBlue, 0.45);
+
+    @mixin atMedium {
+      padding: 12px 5px;
+      background-color: transparent;
+    }
   }
   &--pull-right {
     @mixin atMedium {
