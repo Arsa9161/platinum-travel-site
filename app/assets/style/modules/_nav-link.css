@@ -1,14 +1,20 @@
 .nav-link {
-  border: 1px solid red;
-
   font-weight: 200;
 
   ul {
+    margin: 0;
+    padding: 0;
+
+    display: flex;
+    justify-content: space-between;
     margin-top: 12px;
     list-style-type: none;
+
+    @mixin atMedium {
+      display: block;
+    }
   }
   li:last-child {
-    margin-right: 10px;
     @mixin atMedium {
       margin-right: 20px;
     }
@@ -16,8 +22,7 @@
 
   li {
     display: inline-block;
-    margin-right: 45px;
-
+    flex: 1;
     @mixin atMedium {
       float: left;
       margin-right: 20px;
