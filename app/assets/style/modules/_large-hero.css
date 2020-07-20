@@ -1,46 +1,48 @@
 .large-hero {
-    position: relative;
-    border-bottom: 10px solid $mainBlue;
-    &__image {
-        width: 100%;
-        display: block;
+  position: relative;
+  border-bottom: 10px solid $mainBlue;
+  &__image {
+    width: 100%;
+    display: block;
+  }
+  &__text-content {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    top: 50%;
+    transform: translateY(-50%);
+    text-align: center;
+  }
+  &__title {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 2rem;
+    margin: 0;
+    padding-top: 100px;
+    @mixin atSmall {
+      font-size: 4.5rem;
+      padding-top: 80px;
     }
-    &__text-content {
-        position: absolute;
-        left: 0;
-        width: 100%;
-        top: 50%;
-        transform: translateY(-50%);
-        text-align: center;
+  }
+  &__subtitle {
+    font-weight: 300;
+    color: $mainBlue;
+    font-size: 1.2rem;
+    margin: 0;
+    @mixin atSmall {
+      font-size: 2.9rem;
     }
-    &__title {
-        font-weight: 300;
-        color: $mainBlue;
-        font-size: 2rem;
-        margin: 0;
-        @mixin atSmall {
-            font-size: 4.8rem;
-        }
+  }
+  &__description {
+    font-weight: 100;
+    font-size: 1.1rem;
+    color: #fff;
+    max-width: 30rem;
+    margin-left: auto;
+    margin-right: auto;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
+    @mixin atSmall {
+      font-size: 1.875rem;
     }
-    &__subtitle {
-        font-weight: 300;
-        color: $mainBlue;
-        font-size: 1.2rem;
-        margin: 0;
-        @mixin atSmall {
-            font-size: 2.9rem;
-        }
-    }
-    &__description {
-        font-weight: 100;
-        font-size: 1.1rem;
-        color: #fff;
-        max-width: 30rem;
-        margin-left: auto;
-        margin-right: auto;
-        text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.1);
-        @mixin atSmall {
-            font-size: 1.875rem;
-        }
-    }
+  }
 }

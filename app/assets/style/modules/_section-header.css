@@ -1,5 +1,52 @@
 .section-header {
-  border: 1px solid black;
+  position: absolute;
+  width: 100%;
+  z-index: 2;
+  background-color: rgba($mainBlue, 0.3);
 
-  background-color: rgba($mainBlue, 0.5);
+  &__content {
+    border: 1px solid red;
+    transition: all 0.3s ease;
+
+    opacity: 0;
+    padding-top: 120px;
+    text-align: center;
+    @mixin atMedium {
+      display: block;
+      padding-top: 0;
+    }
+  }
+  &__content--active {
+    opacity: 1;
+  }
+  &__btn {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+  &__logo {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: $mainBlue;
+    padding: 20px 10px;
+    @mixin atMedium {
+      left: 10%;
+      transform: translateX(0);
+    }
+  }
+  &__menu-icon {
+    width: 16px;
+    height: 16px;
+    background-color: #fff;
+    position: absolute;
+    right: 20px;
+    top: 20px;
+    display: block;
+
+    @mixin atMedium {
+      display: none;
+    }
+  }
 }

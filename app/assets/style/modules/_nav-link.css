@@ -1,0 +1,36 @@
+.nav-link {
+  border: 1px solid red;
+
+  font-weight: 200;
+
+  ul {
+    margin-top: 12px;
+    list-style-type: none;
+  }
+  li:last-child {
+    margin-right: 10px;
+    @mixin atMedium {
+      margin-right: 20px;
+    }
+  }
+
+  li {
+    display: inline-block;
+    margin-right: 45px;
+
+    @mixin atMedium {
+      float: left;
+      margin-right: 20px;
+    }
+  }
+  li a {
+    text-decoration: none;
+    color: #fff;
+    padding: 10px 5px;
+  }
+  &--pull-right {
+    @mixin atMedium {
+      float: right;
+    }
+  }
+}
