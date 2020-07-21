@@ -4,6 +4,12 @@ export default class MobileMenu {
     this.menu_icon = elements.menu_icon;
     this.menu_content = elements.menu_content;
     this.section_header = elements.section_header;
+    this.events();
+  }
+  events() {
+    this.menu_icon.addEventListener("click", (e) => {
+      this.toggleMenu();
+    });
   }
   toggleContent() {
     this.menu_content.classList.toggle("section-header__content--active");

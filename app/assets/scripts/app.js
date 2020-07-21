@@ -1,8 +1,8 @@
 import "../style/style.css";
 import elements from "./view/base";
 import MobileMenu from "./model/mobileApp";
+import RevealOnScroll from "./model/revealOnScroll";
 
-const mobileMenu = new MobileMenu();
-mobileMenu.menu_icon.addEventListener("click", (e) => {
-  mobileMenu.toggleMenu();
-});
+new MobileMenu();
+new RevealOnScroll(elements.feature_items, 75);
+new RevealOnScroll(elements.testimonials, 50);
