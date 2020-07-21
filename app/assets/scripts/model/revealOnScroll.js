@@ -28,9 +28,9 @@ export default class RevealOnScroll {
     );
   }
   callerCalculate() {
-    console.log("scroll event");
     this.items_to_reveal.forEach((el) => {
       if (!el.isAcitve) {
+        console.log("reveal");
         this.calculateIfScrolledTo(el);
       }
     });
@@ -38,7 +38,6 @@ export default class RevealOnScroll {
   calculateIfScrolledTo(el) {
     if (window.scrollY + this.browser_height > el.offsetTop) {
       console.log("tootsoolj bn");
-
       let el_point_as_percent =
         (el.getBoundingClientRect().y / this.browser_height) * 100;
 
