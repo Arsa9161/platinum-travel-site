@@ -4,6 +4,8 @@ const elements = {
   section_header: document.querySelector(".section-header"),
   feature_items: document.querySelectorAll(".feature-item"),
   testimonials: document.querySelectorAll(".testimonial"),
+  page_sections: document.querySelectorAll(".page-section"),
+  nav_link: document.querySelector(".nav-link"),
 };
 
 export default elements;

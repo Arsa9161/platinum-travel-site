@@ -1,6 +1,4 @@
 .nav-link {
-  font-weight: 200;
-
   ul {
     margin: 0;
     padding: 0;
@@ -36,10 +34,15 @@
     color: #fff;
     padding: 5px 10px;
     background-color: rgba($mainBlue, 0.45);
+    font-weight: 200;
 
     @mixin atMedium {
       padding: 12px 5px;
       background-color: transparent;
+      font-weight: 400;
+    }
+    &.--active {
+      color: $mainOrange;
     }
   }
   &--pull-right {
