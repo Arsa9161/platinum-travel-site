@@ -1,5 +1,4 @@
 .page-section {
-  border: 1px solid red;
   padding: 0.5rem 0;
   @mixin atSmall {
     padding: 4.5rem 0;

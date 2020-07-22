@@ -1,30 +1,33 @@
 .section-title {
-    font-size: 2rem;
-    font-weight: 300;
-    text-align: center;
-    strong {
-        font-weight: 500;
-    }
+  font-size: 2rem;
+  font-weight: 300;
+  text-align: center;
+  strong {
+    font-weight: 500;
+  }
+  @mixin atSmall {
+    font-size: 3.5rem;
+  }
+  &--b-margin {
+    margin-bottom: 5rem;
+  }
+  &__icon {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 0.5rem;
     @mixin atSmall {
-        font-size: 3.5rem;
+      position: relative;
+      top: 10px;
+      display: inline-block;
+      margin-right: 1.5rem;
+      margin-bottom: 0;
     }
-    &--b-margin {
-        margin-bottom: 5rem;
-    }
-    &__icon {
-        display: block;
-        margin-right: auto;
-        margin-left: auto;
-        margin-bottom: 0.5rem;
-        @mixin atSmall {
-            position: relative;
-            top: 10px;
-            display: inline-block;
-            margin-right: 1.5rem;
-            margin-bottom: 0;
-        }
-    }
-    &--blue {
-        color: $mainBlue;
-    }
+  }
+  &--blue {
+    color: $mainBlue;
+  }
+  &--less-margin {
+    margin-bottom: 0;
+  }
 }

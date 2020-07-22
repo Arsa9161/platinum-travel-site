@@ -6,6 +6,11 @@ const elements = {
   testimonials: document.querySelectorAll(".testimonial"),
   page_sections: document.querySelectorAll(".page-section"),
   nav_link: document.querySelector(".nav-link"),
+  open_modal_btns: document.querySelectorAll(".modal-window"),
+  selector_strings: {
+    modal: ".modal",
+    modal_close: ".modal__close",
+  },
 };
 
 export default elements;
