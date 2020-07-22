@@ -3,6 +3,7 @@ import elements from "./view/base";
 import MobileMenu from "./model/mobileApp";
 import RevealOnScroll from "./model/revealOnScroll";
 import StickyHeader from "./model/stickyHeader";
+import "lazysizes";
 
 new MobileMenu();
 new RevealOnScroll(elements.feature_items, 75);
