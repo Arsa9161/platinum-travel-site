@@ -23,7 +23,7 @@ export default class ClientArea {
     )
       .then((r) => {
         this.form.remove();
-        this.content_area.innerHTML = r;
+        this.content_area.innerHTML = r.data;
       })
       .catch((er) => {
         this.content_area.innerHTML = `<p class="client-area__error">Таны нууц үг буруу байна. </p>`;
