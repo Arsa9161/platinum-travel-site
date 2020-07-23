@@ -6,7 +6,7 @@
  */
 exports.handler = function (event, context, callback) {
   let body;
-  const html = `
+  const server_data = `
   <h2>Hello this is secret page</h2>
   <p>yu bn zaluu meen</p>
   `;
@@ -20,7 +20,7 @@ exports.handler = function (event, context, callback) {
   if (body.password === "JavaScript") {
     callback(null, {
       statusCode: 200,
-      body: html,
+      body: server_data,
     });
   } else {
     callback(null, {
